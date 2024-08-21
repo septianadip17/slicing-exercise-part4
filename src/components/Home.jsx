@@ -23,9 +23,47 @@ const Home = () => {
                 Where to grow your business as a photographer: site or social
                 media?
               </p>
-              <button className="btn-primary">
-                Register
-              </button>
+              <button className="btn-primary">Register</button>
+            </div>
+          </div>
+          {/* slide 2 */}
+          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+            <div>
+              <img src={banner1} alt="banner" />
+            </div>
+            {/* hero text */}
+            <div className="md:w-1/2">
+              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:3/4 leading-snug">
+                Learn and Earn Money{" "}
+                <span className="text-brandPrimary leading-snug">
+                  in 4 Months
+                </span>
+              </h1>
+              <p className="text-neutralGrey text-base mb-8">
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <button className="btn-primary">Register</button>
+            </div>
+          </div>
+          {/* slide 3 */}
+          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+            <div>
+              <img src={banner1} alt="banner" />
+            </div>
+            {/* hero text */}
+            <div className="md:w-1/2">
+              <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:3/4 leading-snug">
+                Lesson and insight{" "}
+                <span className="text-brandPrimary leading-snug">
+                  from 8 years
+                </span>
+              </h1>
+              <p className="text-neutralGrey text-base mb-8">
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+              <button className="btn-primary">Register</button>
             </div>
           </div>
         </Carousel>
