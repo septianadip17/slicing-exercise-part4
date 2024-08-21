@@ -57,7 +57,7 @@ const Navbar = () => {
           </a>
 
           {/* nav items for large device */}
-          <ul className="md:flex space-x-12 hidden">
+          <ul className="lg:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
               <Link
                 to={path}
@@ -86,7 +86,7 @@ const Navbar = () => {
           </div>
 
           {/* menu button for only mobile devices */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-neutralDGrey focus:outline-none focus:text-gray-500"
