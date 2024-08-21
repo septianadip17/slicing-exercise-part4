@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto">
       <div className="text-center my-8">
-        <h2 className="text-4xl text-neutralDGrey font-semibold mb-2">
+        <h2 className="text-4xl text-neutralDGrey font-semibold mb-3">
           Our Clients
         </h2>
         <p className="text-neutralDGrey">
@@ -21,6 +21,13 @@ const Services = () => {
           <img src="/src/assets/company6.png" alt="company 6" />
           <img src="/src/assets/company7.png" alt="company 7" />
         </div>
+      </div>
+      {/* services cards */}
+      <div className="mt-20 md:w-1/2 mx-auto text-center">
+        <h2 className="text-4xl text-neutralDGrey font-semibold mb-3">
+          Manage your entire community in a single system
+        </h2>
+        <p className="text-neutralDGrey">Who is Nextcent suitable for?</p>
       </div>
     </div>
   );
