@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,14 +46,37 @@ const Navbar = () => {
             <img src={logo} alt="" className="w-10 inline-block items-center" />
             <span className="text-[#263238]">NEXCENT</span>
           </a>
+
           {/* nav items for large device */}
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
-              <Link key={path} to={path}>
+              <Link
+                to={path}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                key={path}
+                className="block text-base text-gray900 hover:text-brandPrimary first:font-medium"
+              >
                 {link}
               </Link>
             ))}
           </ul>
+
+          {/* btn for large devices */}
+          <div className="space-x-12 hidden lg:flex items-center">
+            <a
+              href="/"
+              className="hidden lg:flex items-center text-brandPrimary hover:text-gray900"
+            >
+              Login
+            </a>
+            <button className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey">
+              Sign Up
+            </button>
+          </div>
+
+          {/* menu button for only mobile devices */}
         </div>
       </nav>
     </header>
