@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
+import {Link} from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +47,13 @@ const Navbar = () => {
             <span className="text-[#263238]">NEXCENT</span>
           </a>
           {/* nav items for large device */}
-          <ul></ul>
+          <ul className="md:flex space-x-12 hidden">
+            {navItems.map(({ link, path }) => (
+              <Link key={path} to={path}>
+                {link}
+              </Link>
+            ))}
+          </ul>
         </div>
       </nav>
     </header>
