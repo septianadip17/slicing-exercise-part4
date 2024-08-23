@@ -39,13 +39,75 @@ const Products = () => {
           <div className="md:w-2/3 mx-auto border-2 border-rose-500">
             <div>
               <p className="md:w-4/5 text-sm text-neutralGrey mb-8 leading-7 border-2 border-sky-500">
-              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
               </p>
-              <h5 className="text-brandPrimary text-xl font-semibold mb-2">Tim Smith</h5>
+              <h5 className="text-brandPrimary text-xl font-semibold mb-2">
+                Tim Smith
+              </h5>
               <p>British Dragaon Boat Racing Association</p>
               <div>
                 <div>
-                  <img src="/src/assets/company1.png" alt="company 1" />
+                  <img
+                    src="/src/assets/company1.png"
+                    alt="company 1"
+                    className="cursor-pointer"
+                  />
+                  <img
+                    src="/src/assets/company2.png"
+                    alt="company 2"
+                    className="cursor-pointer"
+                  />
+                  <img
+                    src="/src/assets/company3.png"
+                    alt="company 3"
+                    className="cursor-pointer"
+                  />
+                  <img
+                    src="/src/assets/company4.png"
+                    alt="company 4"
+                    className="cursor-pointer"
+                  />
+                  <img
+                    src="/src/assets/company5.png"
+                    alt="company 5"
+                    className="cursor-pointer"
+                  />
+                  <img
+                    src="/src/assets/company6.png"
+                    alt="company 6"
+                    className="cursor-pointer"
+                  />
+                  <div className="flex items-center gap-8">
+                    <a
+                      href="/"
+                      className="font-bold text-brandPrimary hover:text-neutral-700"
+                    >
+                      Meet all customers
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        className="inline-block ml-2"
+                      >
+                        <path
+                          d="M16 16.399L19.2929 13.1062C19.6834 12.7156 19.6834 12.0825 19.2929 11.6919L16 8.39905M19 12.399L5 12.399"
+                          stroke="#4CAF4F"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
