@@ -36,9 +36,9 @@ const Products = () => {
           <div className="md:w-1/3 "></div>
 
           {/* stats */}
-          <div className="md:w-2/3 mx-auto border-2 border-rose-500">
+          <div className="md:w-2/3 mx-auto">
             <div>
-              <p className="md:w-4/5 text-sm text-neutralGrey mb-8 leading-7 border-2 border-sky-500">
+              <p className="md:w-4/5 text-sm text-neutralGrey mb-8 leading-7 ">
                 Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
                 lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
                 eu enim metus. Vivamus sed libero ornare, tristique quam in,
@@ -54,9 +54,11 @@ const Products = () => {
               <h5 className="text-brandPrimary text-xl font-semibold mb-2">
                 Tim Smith
               </h5>
-              <p>British Dragaon Boat Racing Association</p>
+              <p className="text-base text-neutralDGrey mb-8">
+                British Dragaon Boat Racing Association
+              </p>
               <div>
-                <div>
+                <div className="flex items-center gap-8 flex-wrap">
                   <img
                     src="/src/assets/company1.png"
                     alt="company 1"
