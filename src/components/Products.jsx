@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImg from "../assets/mobile-login.png";
+import maecenas from "../assets/maecenas.png";
 
 const Products = () => {
   return (
@@ -33,7 +34,8 @@ const Products = () => {
       {/* company stats */}
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16 ">
         <div className="flex flex-col md:flex-row  justify-between items-center gap-8 ">
-          <div className="md:w-1/3 "></div>
+          <div className="md:w-1/3 ">
+          <img src={maecenas} alt="" /></div>
 
           {/* stats */}
           <div className="md:w-2/3 mx-auto">
