@@ -33,6 +33,20 @@ const Blog = () => {
           lots more.
         </p>
       </div>
+
+      {/* all blogs */}
+      <div>
+        {
+          blogs.map(blog => <div key={blog.id}>
+            <img src={blog.image} alt="gambar blog" />
+            <div>
+              <h3>{blog.title}</h3>
+            </div>
+          </div>
+            
+          )
+        }
+      </div>
     </div>
   );
 };
