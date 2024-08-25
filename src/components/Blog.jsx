@@ -22,7 +22,7 @@ const Blog = () => {
 
   return (
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12">
-      <div className="text-center md:w-1/2 mx-auto my-12">
+      <div className="text-center md:w-1/2 mx-auto">
         <h2 className="text-4xl text-neutralDGrey font-semibold mb-4">
           Caring is the new marketing
         </h2>
@@ -35,17 +35,42 @@ const Blog = () => {
       </div>
 
       {/* all blogs */}
-      <div>
-        {
-          blogs.map(blog => <div key={blog.id}>
-            <img src={blog.image} alt="gambar blog" />
-            <div>
-              <h3>{blog.title}</h3>
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
+        {blogs.map((blog) => (
+          <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
+            <img
+              src={blog.image}
+              alt="gambar blog"
+              className="hover:scale-95 transition-all duration-300"
+            />
+            <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+              <h3 className="mb-3 text-neutralGrey font-semibold">
+                {blog.title}
+              </h3>
+              <div className="flex items-center justify-center gap-8">
+                <a
+                  href="/"
+                  className="font-bold text-brandPrimary hover:text-neutral-700"
+                >
+                  Read more
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    className="inline-block ml-2"
+                  >
+                    <path
+                      d="M16 16.399L19.2929 13.1062C19.6834 12.7156 19.6834 12.0825 19.2929 11.6919L16 8.39905M19 12.399L5 12.399"
+                      stroke="#4CAF4F"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-            
-          )
-        }
+        ))}
       </div>
     </div>
   );
